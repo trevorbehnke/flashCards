@@ -322,5 +322,29 @@ export const shortcuts = [
 	{
 		task: 'Close All',
 		shortcut: '⌘K ⌘W'
+	},
+	{
+		task: 'Reopen closed editor',
+		shortcut: '⇧⌘T'
+	},
+	{
+		task: 'Keep preview mode editor open',
+		shortcut: '⌘K Enter'
+	},
+	{
+		task: 'Open next / previous',
+		shortcut: '⌃Tab / ⌃⇧Tab'
+	},
+	{
+		task: 'Copy path of active file',
+		shortcut: '⌘K P'
+	},
+	{
+		task: 'Reveal active file in Finder',
+		shortcut: '⌘K R'
+	},
+	{
+		task: 'Show active file in new window/instance',
+		shortcut: '⌘K O'
 	}
 ];
