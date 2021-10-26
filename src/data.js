@@ -230,5 +230,97 @@ export const shortcuts = [
 	{
 		task: 'Change file language',
 		shortcut: '⌘K M'
+	},
+	{
+		task: 'Show all Symbols',
+		shortcut: '⌘T'
+	},
+	{
+		task: 'Go to Line...',
+		shortcut: '⌃G'
+	},
+	{
+		task: 'Go to File...',
+		shortcut: '⌘P'
+	},
+	{
+		task: 'Go to Symbol...',
+		shortcut: '⇧⌘O'
+	},
+	{
+		task: 'Show Problems panel',
+		shortcut: '⇧⌘M'
+	},
+	{
+		task: 'Go to next/previous error or warning',
+		shortcut: 'F8/⇧F8'
+	},
+	{
+		task: 'Navigate editor group history',
+		shortcut: '⌃⇧Tab'
+	},
+	{
+		task: 'Go back/forward',
+		shortcut: '⌃- / ⌃⇧-'
+	},
+	{
+		task: 'Toggle Tab moves focus',
+		shortcut: '⌃⇧M'
+	},
+	{
+		task: 'Close editor',
+		shortcut: '⌘W'
+	},
+	{
+		task: 'Close folder',
+		shortcut: '⌘KF'
+	},
+	{
+		task: 'Split editor',
+		shortcut: '⌘\\'
+	},
+	{
+		task: 'Focus into 1st, 2nd, 3rd editor group',
+		shortcut: '⌘1/⌘2/⌘3'
+	},
+	{
+		task: 'Focus into previous/next editor group',
+		shortcut: '⌘K⌘←/⌘K⌘→'
+	},
+	{
+		task: 'Move editor left/right',
+		shortcut: '⌘K ⇧⌘← / ⌘K ⇧⌘→'
+	},
+	{
+		task: 'Move active editor group',
+		shortcut: '⌘K ← / ⌘K →'
+	},
+	{
+		task: 'New File',
+		shortcut: '⌘N'
+	},
+	{
+		task: 'Open File...',
+		shortcut: '⌘O'
+	},
+	{
+		task: 'Save',
+		shortcut: '⌘S'
+	},
+	{
+		task: 'Save As...',
+		shortcut: '⇧⌘S'
+	},
+	{
+		task: 'Save All',
+		shortcut: '⌥⌘S'
+	},
+	{
+		task: 'Close',
+		shortcut: '⌘W'
+	},
+	{
+		task: 'Close All',
+		shortcut: '⌘K ⌘W'
 	}
 ];
