@@ -346,5 +346,113 @@ export const shortcuts = [
 	{
 		task: 'Show active file in new window/instance',
 		shortcut: '⌘K O'
+	},
+	{
+		task: 'Toggle full screen',
+		shortcut: '⌃⌘F'
+	},
+	{
+		task: 'Toggle editor layout (horizontal/vertical)',
+		shortcut: '⌥⌘0'
+	},
+	{
+		task: 'Zoom in/out',
+		shortcut: '⌘= / ⇧⌘-'
+	},
+	{
+		task: 'Toggle Sidebar visibility',
+		shortcut: '⌘B'
+	},
+	{
+		task: 'Show Explorer / Toggle focus',
+		shortcut: '⇧⌘E'
+	},
+	{
+		task: 'Show Search',
+		shortcut: '⇧⌘F'
+	},
+	{
+		task: 'Show Source Control',
+		shortcut: '⌃⇧G'
+	},
+	{
+		task: 'Show Debug',
+		shortcut: '⇧⌘D'
+	},
+	{
+		task: 'Show Extensions',
+		shortcut: '⇧⌘X'
+	},
+	{
+		task: 'Replace in files',
+		shortcut: '⇧⌘H'
+	},
+	{
+		task: 'Toggle Search details',
+		shortcut: '⇧⌘J'
+	},
+	{
+		task: 'Show Output panel',
+		shortcut: '⇧⌘U'
+	},
+	{
+		task: 'Open Markdown preview',
+		shortcut: '⇧⌘V'
+	},
+	{
+		task: 'Open Markdown preview to the side',
+		shortcut: '⌘K V'
+	},
+	{
+		task: 'Zen Mode (Esc Esc to exit)',
+		shortcut: '⌘K Z'
+	},
+	{
+		task: 'Toggle breakpoint',
+		shortcut: 'F9'
+	},
+	{
+		task: 'Start/Continue',
+		shortcut: 'F5'
+	},
+	{
+		task: 'Step into/ out',
+		shortcut: 'F11 / ⇧F11'
+	},
+	{
+		task: 'Step over',
+		shortcut: 'F10'
+	},
+	{
+		task: 'Stop',
+		shortcut: '⇧F5'
+	},
+	{
+		task: 'Show hover',
+		shortcut: '⌘K ⌘I'
+	},
+	{
+		task: 'Show integrated terminal',
+		shortcut: '⌃`'
+	},
+	{
+		task: 'Create new terminal',
+		shortcut: '⌃⇧`'
+	},
+	{
+		task: 'Copy selection',
+		shortcut: '⌘C'
+	},
+	{
+		task: 'Scroll up/down',
+		shortcut: '⌘↑ / ↓'
+	},
+	{
+		task: 'Scroll page up/down',
+		shortcut: 'PgUp / PgDn'
+	},
+	{
+		task: 'Scroll to top/bottom',
+		shortcut: '⌘Home / End'
 	}
 ];
