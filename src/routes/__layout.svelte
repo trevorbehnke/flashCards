@@ -5,10 +5,10 @@
 </script>
 
 <div
-	class="flex flex-col min-h-screen w-full flex-grow bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600"
+	class="flex flex-col w-full min-h-screen bg-gradient-to-br from-blue-200 via-blue-400 to-blue-600"
 >
 	<Header />
-	<main class="flex flex-col flex-grow">
+	<main class="flex flex-col flex-grow ">
 		<slot />
 	</main>
 	<Footer />

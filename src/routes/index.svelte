@@ -1,4 +1,6 @@
 <script>
+	import Tabs from '$lib/components/Tabs.svelte';
+
 	import { shortcuts } from '../data.js';
 
 	import Flashcard from '$lib/components/Flashcard.svelte';
@@ -27,26 +29,36 @@
 			flashcardIndex += 1;
 		}
 	};
+
+	// tabs
+	let items = ['Mac', 'Windows'];
+	let activeItem = 'Mac';
+	const tabChange = (e) => (activeItem = e.detail);
 </script>
 
-<main>
-	<!-- FLASHCARD -->
-	<div class="flip-box">
-		<div class="flip-box-inner" class:flip-it={showCardBack}>
-			<Flashcard {task} {shortcut} {showCardBack} />
+<main class="">
+	<Tabs {activeItem} {items} on:tabChange={tabChange} />
+	{#if activeItem === 'Mac'}
+		<!-- FLASHCARD -->
+		<div class="flip-box">
+			<div class="flip-box-inner" class:flip-it={showCardBack}>
+				<Flashcard {task} {shortcut} {showCardBack} />
+			</div>
 		</div>
-	</div>
 
-	<!-- BUTTONS -->
-	<div id="btn-cont" class="rounded-lg pt-4 flex justify-evenly w-96">
-		<button class="rounded-lg w-24 p-2" on:click={prevCard}>&#8592;</button>
+		<!-- BUTTONS -->
+		<div id="btn-cont" class="rounded-lg pt-4 flex justify-evenly w-96">
+			<button class="rounded-lg w-20 p-2" on:click={prevCard}>&#8592;</button>
 
-		<button class="rounded-lg p-2" on:click={toggleShowBack}>
-			{showCardBack ? 'Hide Answer' : 'Show Answer'}
-		</button>
+			<button class="rounded-lg p-2 w-32" on:click={toggleShowBack}>
+				{showCardBack ? 'Hide Answer' : 'Show Answer'}
+			</button>
 
-		<button class="rounded-lg w-24 p-2" on:click={nextCard}>&#8594;</button>
-	</div>
+			<button class="rounded-lg w-20 p-2" on:click={nextCard}>&#8594;</button>
+		</div>
+	{:else if activeItem === 'Windows'}
+		Add this!
+	{/if}
 </main>
 
 <style>
@@ -60,9 +72,9 @@
 
 	/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 	.flip-box {
-		background-color: transparent;
-		width: 400px;
-		height: 300px;
+		/* background-color: transparent; */
+		width: 350px;
+		height: 250px;
 		/* 		border: 1px solid #ddd; */
 		perspective: 1000px; /* Remove this if you don't want the 3D effect */
 	}
@@ -90,13 +102,23 @@
 	}
 
 	button {
-		background-color: hsl(167, 63%, 45%);
+		/* background-color: hsl(167, 63%, 45%); */
 		/* padding: 10px 10px; */
 		/* color: white; */
+		background: rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
 		cursor: pointer;
 	}
 
+	button:hover {
+		background: rgba(255, 255, 255, 0.4);
+	}
+
 	button:active {
-		background-color: hsl(0, 0%, 0%);
+		background-color: hsl(167, 63%, 45%);
 	}
 </style>
