@@ -2,12 +2,7 @@
 </script>
 
 <div class="p-2 border-b-2 border-black">
-	<div class="flex justify-between max-w-5xl mx-auto">
-		<p class="text-2xl">VSCode Flash Cards</p>
-		<!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-			>Sign Up</button
-		> -->
-	</div>
+	<p class="text-2xl text-center">VSCode Flash Cards</p>
 </div>
 
 <style>

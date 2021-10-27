@@ -38,14 +38,14 @@
 	</div>
 
 	<!-- BUTTONS -->
-	<div id="btn-cont">
-		<button class="arrow-btn" on:click={prevCard}>&#8592;</button>
+	<div id="btn-cont" class="rounded-lg pt-4 flex justify-evenly w-96">
+		<button class="rounded-lg w-24 p-2" on:click={prevCard}>&#8592;</button>
 
-		<button on:click={toggleShowBack}>
+		<button class="rounded-lg p-2" on:click={toggleShowBack}>
 			{showCardBack ? 'Hide Answer' : 'Show Answer'}
 		</button>
 
-		<button class="arrow-btn" on:click={nextCard}>&#8594;</button>
+		<button class="rounded-lg w-24 p-2" on:click={nextCard}>&#8594;</button>
 	</div>
 </main>
 
@@ -55,7 +55,7 @@
 		flex-direction: column;
 		align-items: center;
 		margin-top: 15%;
-		height: 100vh;
+		/* height: 100vh; */
 	}
 
 	/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -83,20 +83,20 @@
 	}
 
 	#btn-cont {
-		width: 200px;
-		padding: 10px 0;
-		display: flex;
-		justify-content: space-between;
+		/* width: 300px; */
+		/* padding: 10px 0; */
+		/* display: flex; */
+		/* justify-content: space-between; */
 	}
 
 	button {
-		background-color: hsl(65, 6%, 40%);
-		padding: 10px 10px;
-		color: white;
+		background-color: hsl(167, 63%, 45%);
+		/* padding: 10px 10px; */
+		/* color: white; */
 		cursor: pointer;
 	}
 
 	button:active {
-		background-color: hsl(50, 65%, 25%);
+		background-color: hsl(0, 0%, 0%);
 	}
 </style>
