@@ -4,14 +4,17 @@
 	export let showCardBack;
 </script>
 
-<div class="flip-box-front">
+<div class="flip-box-front rounded-lg border-2 border-black shadow-xl">
 	<div id="image-cont">
-		<p>{task}</p>
+		<p class=" text-3xl">{task}</p>
 	</div>
 </div>
 
-<div class="flip-box-back" class:conceal-answer={showCardBack}>
-	<h2>{shortcut}</h2>
+<div
+	class="flip-box-back rounded-lg border-2 border-black shadow-xl"
+	class:conceal-answer={showCardBack}
+>
+	<p class="text-3xl">{shortcut}</p>
 </div>
 
 <style>
@@ -21,9 +24,9 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		-webkit-backface-visibility: hidden; /* Safari */
+
 		backface-visibility: hidden;
-		box-shadow: -1px 1px 3px black;
+		/* box-shadow: -1px 1px 3px black; */
 	}
 
 	/* Style the front side */

@@ -4,13 +4,12 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<div class="flex flex-col min-h-screen bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600">
+<div
+	class="flex flex-col min-h-screen w-full flex-grow bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600"
+>
 	<Header />
-
-	<div class="mx-auto flex flex-col flex-grow w-full max-w-7xl">
-		<main class="flex flex-col w-full flex-grow py-4 px-4">
-			<slot />
-		</main>
-		<Footer />
-	</div>
+	<main class="flex flex-col flex-grow">
+		<slot />
+	</main>
+	<Footer />
 </div>
